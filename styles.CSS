@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    font-size: larger;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    justify-content: space-between;
+    box-shadow: #0056b3;
+}
+
+/* Style the header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: row;
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+    flex-direction: left;
+    box-shadow: #e0f7fa;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-overflow: clip;
+    flex-wrap: wrap;
+}
+
+
+
+img {
+    margin-left: 50%;
+    overflow-x: hidden;
+    z-index: 5px;
+
+}
+
+#profile {
+    border-radius: 50%;
+    margin: left;
+    display: block;
+}
+
+/* style the navigation bar */
+.navbar {
+background-color: #003366;
+padding: 10px 0;
+text-align: center;
+flex-wrap: wrap;
+display: flex;
+flex-direction: right;
+
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    flex-direction: column;
+}
+
+.navbar a:hover{
+    background-color: #0056b3;
+    text-decoration-line: none;
+    border-radius: 5px;
+}
+
+/* Style the main content */
+main {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ h1, h2, h3 {
+    font-size: 2rem;
+    color: #0056b3;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    margin: 20px 0;
+    line-height: 1.8;
+}
+
+/* button styling */
+.button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    flex-direction: column;
+}
+
+.button:hover {
+    background-color: #003366;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav a {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+     h2 {
+        font-size: 1.5rem;
+    }
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+    .navbar ul li a {
+        padding: 10px 0;
+    }
