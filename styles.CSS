@@ -15,9 +15,9 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     height: 20%;
-    margin: auto;
+    margin-inline-end: auto;
     justify-content: space-between;
     box-shadow: #0056b3;
     display: flex;
@@ -42,17 +42,15 @@ header {
     flex-direction: left;
     box-shadow: #e0f7fa;
     box-sizing: border-box;
+    margin:auto;
 }
 
 header h1 {
     font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     text-overflow: clip;
     flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -69,8 +67,8 @@ header h1 {
     flex-direction: column;
     justify-items: flex-end;
     align-items: flex-end;
-    padding: 20px;
-    margin: 20px;
+    padding: 25px;
+    margin: 5px;
     border-radius: 8px;
     letter-spacing: 2px;
     align-content: space-between;
@@ -78,6 +76,7 @@ header h1 {
     justify-content: right;
     align-items: right;
     box-shadow: none;
+    display: inline-block;
     
 }
 
@@ -102,18 +101,25 @@ padding: 10px 0;
 text-align: center;
 flex-wrap: wrap;
 display: flex;
-flex-direction: right;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
 
 }
 
 .nav ul {
     list-style: none;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 20px;
+    display: flex;
+    flex-direction: wrap;
 }
 
 .navbar a {
@@ -121,7 +127,7 @@ nav ul li {
     text-decoration: none;
     margin: 0 20px;
     font-size: 1.2rem;
-    flex-direction: column;
+    display: flex;
 }
 
 .nav-links a {
