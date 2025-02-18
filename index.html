@@ -3,95 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfoio</title>
-    <link rel="stylesheet" href="styles.CSS">
-    <!--link to another HTML file-->
-
+    <title>PORFOLIO</title>
+    <link rel="stylesheet" href="./Styles.CSS"
+    <script src="./Script.JS"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="#">Technology Stack</a>
-            <nav class="navbar">
-                <div class="nav a">
-                    <h1><a href="#">Chan Miabek</a></h1>
-                    <div class="icon">
-                        <i class="fas fa-bars"></i>
-                      <ul class="nav-links">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.HTML">Projects</a></li>
-                        <li><a href="conctact.HTML">Contact</a></li>
-                      </ul>
-                    </div>
-                </div>
-            </nav>
+    <!--Navigation Menu-->
+    <nav class="navbar">
+        <div class="logo"> My Portfolio</div>
+        <ul class="nav-links" id="navlinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Hamburger Icon for Mobile -->
+        <div class="hamburger" id="hamburger">
+            ☰
         </div>
-    </header>
-    
-    <section class="hero">
+    </nav>
+
+    <!-- Example Sections -->
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
         <div class="container">
             <div class="main-message">
-                <h1>Full Stack Developer </h1>
                 <p>Hello! I am <b><em>Chan Miabek</em></b>, am a dedicated Full Stack Developer with experience in both front-end and back-end technologies. My expertise includes working with modern web development frameworks. I have a solid understanding of Java, HTML, CSS and JavaScript.
              I am passionate about creating seamless and scalable applications, and I always strive to write clean, efficient code while ensuring the best user experience. My goal is to continuously enhance my skills and deliver high-quality solutions that meet both user and business needs.</p>
              <img id="profile"   src="my profile.jpg" alt="myprofile" width="200" height="200">
-                <a href="#" class="cta">View Projects</a>
+                <button><a href="#" class="cta">View Projects</a></button>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>PROJECTS</h2>
-                <div class="project-grid">
-                    <div class="project-item">
-                        <h3>technology full-Stack</h3>
-                        <P>A <b>technology stack</b> (often referred to as a <b>tech stack</b>) is a combination of software tools, programming languages, libraries, frameworks, and other technologies used together to develop, deploy, and run applications or systems.
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am an aspiring <em>full-stack developer</em> living in Kakuma, with a passion for creating innovative digital solutions that solve real-world problems. My journey into the world of technology began with a curiosity for how websites and applications function, driving me to explore both front-end and back-end development.</p>
+         
+        <p>I have honed my skills in languages and frameworks such as HTML, CSS, JavaScript, and I am continually expanding my knowledge to include modern technologies like React, Node.js, and databases like MongoDB and MySQL. My experience involves building responsive web applications, crafting user-friendly interfaces, and working with APIs to deliver seamless user experiences.</p>
+         
+         <p>Living in Kakuma has given me a unique perspective on the transformative power of technology. I am driven to leverage my skills to create solutions that address community challenges and provide access to information and services. My interests extend to open-source projects, collaborative coding, and using technology as a tool for positive social impact.</p>
+         
+         <p>I am eager to grow as a developer, collaborate with like-minded individuals, and contribute to projects that make a difference. With a commitment to lifelong learning, I strive to stay updated with the latest industry trends and best practices in software development.</p>
+         
+         <p>When I am not coding, I enjoy participating in tech communities, sharing knowledge, and mentoring others who are beginning their tech journey. My goal is to become a skilled, adaptable full-stack developer capable of building robust, scalable applications that drive meaningful change.</p>
+    </section>
 
-                            It’s essentially the collection of technologies that work together to support the full lifecycle of an application, from development to deployment. A typical tech stack can include:  </P>
-                            <ul>
-                                <li>Front-end technologies</li>
-                                <li>Back-end technologies</li>
-                                <li>Database technologies</li>
-                                <li>Development tools</li>   <img src="tech.jpg1.webp" alt="tech" width="300" height="100">
-                                <li>Deployment tools</li>
-                            </ul>
-                    </div>
+   <section id="projects">
+        <div class="container">
+         <div class="project">
+              <h2>My Projects</h2>
+              <h3>technology full-Stack</h3>
+                <P>A <b>technology stack</b> (often referred to as a <b>tech stack</b>) is a combination of software tools, programming languages, libraries, frameworks, and other technologies used together to develop, deploy, and run applications or systems.
+
+                 It’s essentially the collection of technologies that work together to support the full lifecycle of an application, from development to deployment. A typical tech stack can include:  </P>
+                  <img src="stack.jpg" alt="tech" width="300" height="100">
+            <ul>
+                <li>Front-end technologies</li>
+                <li>Back-end technologies</li>
+                <li>Database technologies</li>
+                <li>Development tools</li>  
+                <li>Deployment tools</li>
+            </ul>
+       </div>
+     </div>
+    </section>
+    <section>
+      <h3>Web Application</h3>
+       <p>A <b>web application</b> is a software application that runs on a web server and is accessed by users through a web browser, rather than being installed locally on a device like traditional desktop applications. Web applications rely on the internet and require a web browser (like Google Chrome, Firefox, or Safari) to interact with them.</p>
+          <img src="image.png" alt="image"  width="300" height="150">
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="button">
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
-            </div>
-        </section>
-
-        <h3>Web Application</h3>
-        <p>A <b>web application</b> is a software application that runs on a web server and is accessed by users through a web browser, rather than being installed locally on a device like traditional desktop applications. Web applications rely on the internet and require a web browser (like Google Chrome, Firefox, or Safari) to interact with them.</p>
-        <img src="tech.jpg1.webp" alt="tech"  width="300" height="250">
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="button">
-                    <div class="contact-form">
-                        <form action="#">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
-                            <textarea placeholder="Message"></textarea>
-                            <button type="submit">Send</button>
-                        </form>
-                    </div>
-                    <div class="contact-info">
-                        <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I am always open to new projects and partnerships.</p>
-                        <ul>
-                            <li><a href="#">email:chanmiabek22@gmail.com</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            </ul>
-                            <footer>
-                                <div class="container">
-                                    <p>&copy;2025 Chan Miabek </p>
-                                </div>
-                            </footer>
-        
-                        </section>
-                        <script src="c:\Users\AReL\OneDrive\Desktop\Maggiso Jak\script.js"></script>
-    </body>
-</html> 
+                <div class="contact-info">
+                    <p>Feel free to reach out to me for any inquiries or collaboration opportunities. I am always open to new projects and partnerships.</p>
+                    <ul>
+                        <li><a href="#">email:chanmiabek22@gmail.com</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        </ul>
+                        <footer>
+                            <div class="container">
+                                <p>&copy;2025 Chan Miabek </p>
+                            </div>
+                        </footer>
+    </section>
+    
+</body>
+</html>
